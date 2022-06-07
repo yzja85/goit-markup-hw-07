@@ -1,0 +1,105 @@
+/* section 4 */
+.section-4 {
+    background-color: #f5f4fa;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+.section-4__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--first-text-color);
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.section-4__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-4__employee {
+    background-color: #ffffff;
+    margin-left: 0;
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    &:last-child {
+            margin-right: 0;
+        }
+}
+
+
+
+.section-4__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--first-text-color);
+    text-align: center;
+}
+
+.section-4__profession {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.section-4__description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-4__soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.section-4__soc-item+.section-4__soc-item {
+    margin-left: 10px;
+}
+
+.section-4__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+            background-color: var(--accent-color);
+        }
+        &:focus {
+            background-color: var(--accent-color);
+        }
+}
+
+.section-4__icon {
+    fill: #AFB1B8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .section-4__link:hover & {
+            fill: #ffffff;
+        }
+                .section-4__link:focus & {
+                    fill: #ffffff;
+                }
+}
+

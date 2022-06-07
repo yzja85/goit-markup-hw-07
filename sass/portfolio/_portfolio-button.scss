@@ -1,0 +1,49 @@
+.portfolio-section__fierst-list {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-section__fierst-item:not( :last-child) {
+    margin-right: 8px;
+}
+
+.portfolio-section__button {
+
+    background-color: var(--btn-color-porfolio);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--first-text-color);
+    cursor: pointer;
+    padding: 6px 22px;
+    &:hover {
+            background-color: var(--accent-color);
+            color: #ffffff;
+    
+        }
+        &:focus {
+            background-color: var(--accent-color);
+            color: #ffffff;
+        }
+
+}
+
+
+
+.effect-btn-shadow {
+    transition-property: box-shadow, background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+            box-shadow: 1px 2px 2px 0px rgba(13, 4, 4, 0.5);
+        }
+        &:focus {
+            box-shadow: 1px 2px 2px 0px rgba(13, 4, 4, 0.5);
+        }
+}
+

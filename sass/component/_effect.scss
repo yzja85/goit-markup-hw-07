@@ -1,0 +1,15 @@
+.effect-shadow {
+    display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+            box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+        }
+        &:focus {
+            box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+        }
+}
+
+
+

@@ -1,0 +1,21 @@
+.box {
+
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+}
+.box-1 {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+            border: 1px solid var(--accent-color);
+        }
+         &:focus {
+             border: 1px solid var(--accent-color);
+         }
+}
+

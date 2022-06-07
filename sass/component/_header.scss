@@ -1,0 +1,137 @@
+/*header */
+.header {
+  border-bottom: 1px solid #EEEEEE;
+  & .container {
+      display: flex;
+      justify-content: space-between;
+    }
+}
+
+
+.navigation {
+  display: flex;
+}
+
+.header-nav__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo__studio {
+  color: var(--first-text-color);
+  font-weight: bold;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--first-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+
+.navigation__item {
+  position: relative;
+  &:not(:last-child) {
+      margin-right: 50px;
+    }
+}
+
+.navigation__link--active::after {
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
+.contacts__list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--first-text-color);
+  display: flex;
+}
+.header-list-contats .link:focus {
+  color: var(--accent-color);
+}
+.contacts__item {
+  display: flex;
+  align-items: center;
+
+}
+
+.contacts__item:first-child {
+  margin-right: 30px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: 'roboto', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+  &:hover {
+      color: var(--accent-color);
+    }
+    &:focus {
+      color: var(--accent-color);
+    }
+}
+
+.contacts__effect-link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__icon {
+  fill: var(--second-text-color);
+  .contacts__link:hover & {
+      fill: var(--accent-color);
+    }
+        .contacts__link:focus & {
+          fill: var(--accent-color);
+        }
+}
+
+.contacts__effect-icon {
+  margin-right: 10px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+
+
