@@ -24,9 +24,10 @@
 .footer__logo-studio {
     color: #ffffff;
 }
-.footer-address-list .link:focus {
+.footer-contacts__item .link:focus {
     color: var(--accent-color);
 }
+
 .footer-contacts {
     display: flex;
     flex-direction: column;
@@ -42,6 +43,7 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     display: block;
+    
 }
 
 .footer-contacts__link {
@@ -82,11 +84,13 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
+    & :hover {
             background-color: var(--accent-color);
+            
         }
         &:focus {
             background-color: var(--accent-color);
+           
         }
 }
 
@@ -146,6 +150,7 @@
 
 
 .footer-join__button {
+    border: none;
     padding-left: 29px;
     width: 200px;
     height: 50px;

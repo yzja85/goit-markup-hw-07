@@ -1,10 +1,14 @@
 .link {
     text-decoration: none;
-    & .active {
+    &.active {
             color: var(--accent-color);
         }
         &:hover {
             color: var(--accent-color);
         }
+        & :focus{
+            color: var(--accent-color);
+        }
 }
+
 
